@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 4365139137754863733}
   - component: {fileID: -4903951124665994377}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Player
+  m_Name: Sphere 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_GameObject: {fileID: 6463768000047066835}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
