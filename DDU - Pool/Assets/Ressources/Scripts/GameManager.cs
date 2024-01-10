@@ -79,4 +79,12 @@ public class GameManager : MonoBehaviour
             Debug.LogError("No object with the 'Player' tag found.");
         }
     }
+
+    public void quit()
+    {
+        Application.Quit();
+        Debug.Log("Spillet er afsluttet");
+
+    }
+
 }
