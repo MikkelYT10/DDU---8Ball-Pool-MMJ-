@@ -35,14 +35,11 @@ public class GameManager : MonoBehaviour
             Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
             if (ballRigidbody != null)
             {
+                // Other than the velocity, check if the ball iss in contact with the ground, as it falls very slowly
                 if (ballRigidbody.velocity.magnitude < minVelocityToStop)
                 {
                     ballRigidbody.velocity = Vector3.zero;
-                }
-                if (ballRigidbody.angularVelocity.magnitude < minVelocityToStop)
-                {
                     ballRigidbody.angularVelocity = Vector3.zero;
-                    print("velociy = 0");
                 }
             }
         }
