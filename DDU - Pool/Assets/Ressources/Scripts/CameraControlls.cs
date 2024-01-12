@@ -19,7 +19,6 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(sphereTransform.gameObject.GetComponent<Rigidbody>().velocity);
         if (sphereTransform.gameObject.GetComponent<Rigidbody>().velocity == Vector3.zero)
         {
             HandleZoomInput();

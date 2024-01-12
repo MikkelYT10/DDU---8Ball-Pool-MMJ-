@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,16 +12,28 @@ public class GameManager : MonoBehaviour
     public float minVelocityToStop;
     public float minAngularVelocityToStop;
 
+    private Player player1;
+    private Player player2;
+
+    public List<GameObject> fullBalls;
+    public List<GameObject> stripedBalls;
+
+    private GameObject ballInstance;
+
     private void Start()
     {
         // Instantiate the ball prefab
-        GameObject ballInstance = Instantiate(ballPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+        ballInstance = Instantiate(ballPrefab, new Vector3(0, 1, 0), Quaternion.identity);
 
-        // Make the ball black
-        ballInstance.GetComponent<Renderer>().material.color = Color.black;
+        // Create a new player
+        player1 = new Player();
+        player1.name = "Player 1";
+        player2 = new Player();
+        player2.name = "Player 2";
 
-        // Spawn another ball
-        Instantiate(pawnBallPrefab, new Vector3(1, 1, 2), Quaternion.identity);
+        // Assign the player a list of balls
+        player1.assignBallList(fullBalls);
+        player2.assignBallList(stripedBalls);
     }
 
     private void Update()
@@ -85,6 +101,30 @@ public class GameManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Spillet er afsluttet");
 
+    }
+
+    public  void pocketedque()
+    {
+        ballInstance.transform.position = new Vector3(0, 1, 0);
+        Debug.Log("Que has been pocketed");
+    }
+}
+
+public class Player
+{
+    public List<GameObject> balls;
+    public string name;
+
+    public void assignBallList(List<GameObject> ballList)
+    {
+        // Asssign the incomming list's elements to the player's list
+        balls = ballList;
+
+        Debug.Log(name + " has been assigned the following balls: " + balls);
+        for(int i = 0; i < balls.Count; i++)
+        {
+            Debug.Log("Ball " + i + ": " + balls[i]);
+        }
     }
 
 }

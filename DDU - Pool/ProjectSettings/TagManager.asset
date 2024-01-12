@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cornor 1
+  - Cornor 2
+  - Cornor 3
+  - Cornor 4
+  - Cornor 5
+  - Cornor 6
   layers:
   - Default
   - TransparentFX
