@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     private GameObject ballInstance;
 
+    private float str;
+
     private void Start()
     {
         // Instantiate the ball prefab
@@ -28,8 +31,10 @@ public class GameManager : MonoBehaviour
         // Create a new player
         player1 = new Player();
         player1.name = "Player 1";
+        player1.assignTurn(true);
         player2 = new Player();
         player2.name = "Player 2";
+        player2.assignTurn(false);
 
         // Assign the player a list of balls
         player1.assignBallList(fullBalls);
@@ -60,6 +65,35 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            // Print the balls in the player's list
+            Debug.Log(player1.name + "'s balls:");
+            for (int i = 0; i < player1.balls.Count; i++)
+            {
+                Debug.Log("Ball " + i + ": " + player1.balls[i]);
+            }
+            Debug.Log(player2.name + "'s balls:");
+            for (int i = 0; i < player2.balls.Count; i++)
+            {
+                Debug.Log("Ball " + i + ": " + player2.balls[i]);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            str = 4;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            str = 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            str = 1;
+        }
+
+
     }
 
     private void PushBall()
@@ -83,7 +117,7 @@ public class GameManager : MonoBehaviour
                 cameraForward.Normalize();
 
                 // Add force to the ball in the camera's forward direction
-                ballRigidbody.AddForce(cameraForward * force, ForceMode.Impulse);
+                ballRigidbody.AddForce(cameraForward * force * str, ForceMode.Impulse);
             }
             else
             {
@@ -108,23 +142,65 @@ public class GameManager : MonoBehaviour
         ballInstance.transform.position = new Vector3(0, 1, 0);
         Debug.Log("Que has been pocketed");
     }
+
+    public void removeBallFromPlayerList(bool isstriped, GameObject ball)
+    {
+        // Remove the ball from the player's list and destroy it
+        if (isstriped == true)
+        {
+            player1.removeBall(ball);
+        }
+        else
+        {
+            player2.removeBall(ball);
+        }
+        
+    }
+
+    public bool getPlayer1IsTurn()
+    {
+        if (player1.isTurn == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool getPlayer2IsTurn()
+    {
+           if (player2.isTurn == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 
 public class Player
 {
     public List<GameObject> balls;
     public string name;
+    public bool isTurn;
 
     public void assignBallList(List<GameObject> ballList)
     {
         // Asssign the incomming list's elements to the player's list
         balls = ballList;
-
-        Debug.Log(name + " has been assigned the following balls: " + balls);
-        for(int i = 0; i < balls.Count; i++)
-        {
-            Debug.Log("Ball " + i + ": " + balls[i]);
-        }
+    }
+    public void assignTurn(bool turn)
+    {
+        isTurn = turn;
     }
 
+    public void removeBall(GameObject ball)
+    {
+        balls.Remove(ball);
+        Debug.Log("Ball " + ball + " has been removed from " + name + "'s list of balls");
+    }
 }
