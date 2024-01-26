@@ -1,17 +1,11 @@
-using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject ballPrefab;
     public GameObject pawnBallPrefab;
-    public float force;
-    public float minVelocityToStop;
-    public float minAngularVelocityToStop;
+    private GameObject ballInstance;
 
     private Player player1;
     private Player player2;
@@ -19,9 +13,13 @@ public class GameManager : MonoBehaviour
     public List<GameObject> fullBalls;
     public List<GameObject> stripedBalls;
 
-    private GameObject ballInstance;
-
+    public float force;
+    public float minVelocityToStop;
+    public float minAngularVelocityToStop;
     private float str;
+
+    private bool switchTurnsCalled = false;
+    public bool assignedBalls = false;
 
     private void Start()
     {
@@ -35,10 +33,6 @@ public class GameManager : MonoBehaviour
         player2 = new Player();
         player2.name = "Player 2";
         player2.assignTurn(false);
-
-        // Assign the player a list of balls
-        player1.assignBallList(fullBalls);
-        player2.assignBallList(stripedBalls);
     }
 
     private void Update()
@@ -49,21 +43,31 @@ public class GameManager : MonoBehaviour
             PushBall();
         }
 
-        //Stop the ball if its too slow
-        GameObject ball = GameObject.FindGameObjectWithTag("Player");
-        if (ball != null)
+    //Stop the ball if it's too slow
+    GameObject ball = GameObject.FindGameObjectWithTag("Player");
+    if (ball != null)
+    {
+        Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
+        if (ballRigidbody != null)
         {
-            Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
-            if (ballRigidbody != null)
-            {
-                // Other than the velocity, check if the ball iss in contact with the ground, as it falls very slowly
-                if (ballRigidbody.velocity.magnitude < minVelocityToStop)
+                // Other than the velocity, check if the ball is in contact with the ground, as it falls very slowly
+            if (ballRigidbody.velocity.magnitude < minVelocityToStop)
                 {
-                    ballRigidbody.velocity = Vector3.zero;
-                    ballRigidbody.angularVelocity = Vector3.zero;
+                    stopMoving(ballRigidbody);
+                // Call switchturns function only once when the ball is standing still
+                if (!switchTurnsCalled)
+                {
+                    switchturns();
+                    switchTurnsCalled = true;
                 }
             }
+            else
+            {
+                // Reset the flag when the ball is not standing still
+                switchTurnsCalled = false;
+            }
         }
+    }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -94,6 +98,36 @@ public class GameManager : MonoBehaviour
         }
 
 
+    }
+
+    public void assigningBalls(int player, string ballType)
+    {
+        if (player == 1)
+        {
+            if (ballType == "Full")
+            {
+                player1.assignBallList(fullBalls);
+                player1.pBallType = "Full";
+            }
+            else if (ballType == "Striped")
+            {
+                player1.assignBallList(stripedBalls);
+                player1.pBallType = "Striped";
+            }
+        }
+        else if (player == 2)
+        {
+            if (ballType == "Full")
+            {
+                player2.assignBallList(fullBalls);
+                player2.pBallType = "Full";
+            }
+            else if (ballType == "Striped")
+            {
+                player2.assignBallList(stripedBalls);
+                player2.pBallType = "Striped";
+            }
+        } 
     }
 
     private void PushBall()
@@ -130,6 +164,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void stopMoving(Rigidbody ballRigidbody)
+    {
+        ballRigidbody.velocity = Vector3.zero;
+        ballRigidbody.angularVelocity = Vector3.zero;
+    }
+
     public void quit()
     {
         Application.Quit();
@@ -143,18 +183,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Que has been pocketed");
     }
 
+
     public void removeBallFromPlayerList(bool isstriped, GameObject ball)
     {
-        // Remove the ball from the player's list and destroy it
-        if (isstriped == true)
-        {
-            player1.removeBall(ball);
-        }
-        else
-        {
-            player2.removeBall(ball);
-        }
-        
+
+        //
     }
 
     public bool getPlayer1IsTurn()
@@ -180,11 +213,61 @@ public class GameManager : MonoBehaviour
             return false;
         }
     }
+
+    public bool switchturns()
+    {
+        if (player1.isTurn == true)
+        {
+            player1.assignTurn(false);
+            player2.assignTurn(true);
+            return true;
+        }
+        else
+        {
+            player1.assignTurn(true);
+            player2.assignTurn(false);
+            return false;
+        }
+    }
+
+    public void EightBallPocketed()
+    {
+        // Check for each player
+        if (player1.isTurn == true)
+        {
+            // Check if the player has pocketed all of their balls
+            if (player1.balls.Count == 0)
+            {
+                // Player 1 wins
+                Debug.Log("Player 1 wins!");
+            }
+            else
+            {
+                // Player 1 loses
+                Debug.Log("Player 1 loses!");
+            }
+        }
+        else
+        {
+            // Check if the player has pocketed all of their balls
+            if (player2.balls.Count == 0)
+            {
+                // Player 2 wins
+                Debug.Log("Player 2 wins!");
+            }
+            else
+            {
+                // Player 2 loses
+                Debug.Log("Player 2 loses!");
+            }
+        }
+    }
 }
 
 public class Player
 {
     public List<GameObject> balls;
+    public string pBallType;
     public string name;
     public bool isTurn;
 
@@ -196,6 +279,7 @@ public class Player
     public void assignTurn(bool turn)
     {
         isTurn = turn;
+        Debug.Log(name + "'S TURN IS NIOW " + isTurn);
     }
 
     public void removeBall(GameObject ball)
