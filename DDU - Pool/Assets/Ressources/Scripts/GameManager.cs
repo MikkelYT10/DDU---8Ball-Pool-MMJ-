@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // Instantiate the ball prefab
-        ballInstance = Instantiate(ballPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+        ballInstance = Instantiate(ballPrefab, new Vector3(-165, -9, -20), Quaternion.identity);
 
         // Create a new player
         player1 = new Player();

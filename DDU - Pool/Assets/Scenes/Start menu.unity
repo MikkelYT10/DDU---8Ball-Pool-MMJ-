@@ -2182,6 +2182,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2131752590}
+        m_TargetAssemblyTypeName: Scenechange, Assembly-CSharp
+        m_MethodName: ChangeSceneUI
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Play Area
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1996608535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,9 +2398,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 0}
   pawnBallPrefab: {fileID: 0}
+  fullBalls: []
+  stripedBalls: []
   force: 0
   minVelocityToStop: 0
   minAngularVelocityToStop: 0
+  assignedBalls: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

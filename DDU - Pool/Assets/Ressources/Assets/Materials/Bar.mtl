@@ -1,0 +1,997 @@
+# Blender 3.6.5 MTL File: 'Bar.blend'
+# www.blender.org
+
+newmtl 07___Default
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.090000 0.090000 0.090000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Ny mappe (2)/Ny mappe/DartBoard_V4_L3.123c95398306-e296-4b4a-9dd4-b38ee18a57e3/dartboard.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol.001
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol.002
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol.004
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_alcohol.005
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 0.525500 0.396100 0.294100
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.400000
+illum 1
+
+newmtl 14043_16_oz__Beer_Bottle_bottle
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_bottle.001
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_bottle.002
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_bottle.003
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_bottle.004
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_bottle.005
+Ns 65.000015
+Ka 1.000000 1.000000 1.000000
+Kd 0.129400 0.086300 0.047100
+Ks 0.720000 0.720000 0.720000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label.001
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label.002
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label.003
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label.004
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl 14043_16_oz__Beer_Bottle_cap_label.005
+Ns 4.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Ny mappe (2)/Ny mappe/16_oz._Beer_Bottle_v1_L3.123c6aeb6408-22b8-49db-a8c9-f5a96a0c6758/14043_16_oz._Beer_Bottle_diff.jpg
+
+newmtl Atlas
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd 20-liquor-bottles/source/4096/Bottles_Spec.png
+map_Ks 20-liquor-bottles/source/4096/Bottles_Spec.png
+map_Ns 20-liquor-bottles/source/4096/Bottles_Gloss.png
+map_d 20-liquor-bottles/source/4096/Bottles_Alpha.png
+map_Bump -bm 1.000000 20-liquor-bottles/source/4096/Bottles_Norm.png
+
+newmtl Atlas.001
+Ka 1.000000 1.000000 1.000000
+Kd 0.588000 0.588000 0.588000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Ks 20-liquor-bottles/source/4096/Bottles_Spec.png
+map_Ns 20-liquor-bottles/source/4096/Bottles_Gloss.png
+map_d 20-liquor-bottles/source/4096/Bottles_Alpha.png
+map_Bump -bm 1.000000 20-liquor-bottles/source/4096/Bottles_Norm.png
+
+newmtl BeerTap
+Ns 20.000006
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd Ny mappe (2)/BeerTapAlbedo.png
+map_Ks Ny mappe (2)/BeerTapRough.png
+map_refl Ny mappe (2)/BeerTapMetal.png
+map_d Ny mappe (2)/BeerTapAlbedo.png
+map_Bump -bm 0.300000 Ny mappe (2)/BeerTapNormal.png
+
+newmtl Material
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.044
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Ny mappe/dark_wood_diff_1k.jpg
+
+newmtl Material.045
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Ny mappe/wood_table_worn_diff_1k.jpg
+
+newmtl Material.046
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.047
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.048
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.049
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.050
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.051
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.052
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.053
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.054
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.055
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.056
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd wood_cabinet_worn_long_1k.blend/textures/wood_cabinet_worn_long_diff_1k.jpg
+
+newmtl Material.057
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.058
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.059
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.060
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.061
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.062
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.063
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.064
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.065
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.066
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.067
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.068
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.069
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.070
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.071
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.072
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.073
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.074
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.075
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.076
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.077
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.078
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.079
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.080
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.081
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.082
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.083
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.084
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.085
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.086
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brick_wall_02_1k.blend/textures/brick_wall_02_diff_1k.jpg
+
+newmtl Material.087
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.159729 0.258736 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.088
+Ns 614.798523
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.592124 0.021725
+Ks 0.500715 0.500715 0.500715
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.089
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.090
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.091
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.092
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.093
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.094
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.141
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.073234 0.013421 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.143
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Jagermeister_Diff.png
+
+newmtl Material.144
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Martel_Diff.png
+
+newmtl Material.145
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Malibu_Diff.png
+
+newmtl Material.146
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Malibu_Diff.png
+
+newmtl Material.147
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Ramazzotti_Diff.png
+
+newmtl Material.148
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Beefeater_Diff.png
+
+newmtl Material.149
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Beefeater_Diff.png
+
+newmtl Material.150
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Jameson_Diff.png
+
+newmtl Material.151
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Jack_Daniel's_Diff.png
+
+newmtl Material.152
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Curacao_Diff.png
+
+newmtl Material.153
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Cointreau_Diff.png
+
+newmtl Material.154
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Olmeca_Diff.png
+
+newmtl Material.155
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Becherovka_Diff.png
+
+newmtl Material.156
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Sortilège_Diff.png
+
+newmtl Material.157
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Havana_Club_Diff.png
+
+newmtl Material.158
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Kahlua_Diff.png
+
+newmtl Material.159
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Molinari_Sambuka_Diff.png
+
+newmtl Material.161
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Pernod_Diff.png
+
+newmtl Material.162
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Chivas_Diff.png
+
+newmtl Material.163
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Crema_di_Limoncino_Diff.png
+
+newmtl Material.164
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Baileys_Diff.png
+
+newmtl Material.165
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Absolut_Vodka_Diff.png
+
+newmtl Material.166
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Sprites.001
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd 20-liquor-bottles/source/Bottles_Diff.png
+map_Ks 20-liquor-bottles/source/Bottles_Spec.png
+map_Ns 20-liquor-bottles/source/Bottles_Gloss.png
+map_d 20-liquor-bottles/source/Bottles_Alpha.png
+map_Bump -bm 1.000000 20-liquor-bottles/source/Bottles_Norm.png
