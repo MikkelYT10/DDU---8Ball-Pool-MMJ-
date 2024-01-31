@@ -186,8 +186,7 @@ public class GameManager : MonoBehaviour
 
     public void removeBallFromPlayerList(bool isstriped, GameObject ball)
     {
-
-        //
+        Debug.Log("Removing ball " + ball + " from player list" + "Ballstipe: " + isstriped);
     }
 
     public bool getPlayer1IsTurn()
