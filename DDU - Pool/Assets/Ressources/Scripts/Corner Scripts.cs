@@ -36,24 +36,22 @@ public class CornerScripts : MonoBehaviour
 
             }
             GameManager.assignedBalls = true;
-
-            if (other.gameObject.tag == "8Ball")
-            {
-                GameManager.EightBallPocketed();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.tag == "Player")
-            {
-                other.transform.position = middle.position;
-                GameManager.stopMoving(other.gameObject.GetComponent<Rigidbody>());
-            }
         }
-        GameManager.removeBallFromPlayerList(other.gameObject);
-        Destroy(other.gameObject);
-        Debug.Log("Removed ball from player list");
+
+        if (other.gameObject.tag == "8Ball")
+        {
+            GameManager.EightBallPocketed();
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.tag == "Player")
+        {
+            other.transform.position = middle.position;
+            GameManager.stopMoving(other.gameObject.GetComponent<Rigidbody>());
+        }
+        else
+        {
+            GameManager.removeBallFromPlayerList(other.gameObject);
+            Destroy(other.gameObject);
+        }
     }
 }
-
-
-
- 
