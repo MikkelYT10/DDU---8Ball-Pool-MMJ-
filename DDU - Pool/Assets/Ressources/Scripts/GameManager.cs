@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour
     public void quit()
     {
         Application.Quit();
-        Debug.Log("Spillet er afsluttet");
+        Debug.Log("Game has been quitted.");
 
     }
 
@@ -183,10 +183,76 @@ public class GameManager : MonoBehaviour
         Debug.Log("Que has been pocketed");
     }
 
-
-    public void removeBallFromPlayerList(bool isstriped, GameObject ball)
+    public void removeBallFromPlayerList(GameObject ball)
     {
-        Debug.Log("Removing ball " + ball + " from player list" + "Ballstipe: " + isstriped);
+        // if the ball is striped
+        if (ball.tag == "Striped")
+        {
+            // If it's player 1's turn
+            if (player1.isTurn == true)
+            {
+                // If player 1's ball type is striped
+                if (player1.pBallType == "Striped")
+                {
+                    // Remove the ball from player 1's list
+                    player1.removeBall(ball);
+                }
+                else
+                {
+                    // Remove the ball from player 2's list
+                    player2.removeBall(ball);
+                }
+            }
+            // Else if its player 2's turn
+            else if (player2.isTurn == true)
+            {
+                // If player 2's ball type is striped
+                if (player2.pBallType == "Striped")
+                {
+                    // Remove the bal from player 2's list.   
+                    player2.removeBall(ball);
+                }
+                else
+                {
+                    // Remove the ball from player 1's list
+                    player1.removeBall(ball);
+                }
+            }
+        }
+        // Else if the ball is full
+        else if (ball.tag == "Full")
+        {
+            // If it's player 1's turn
+            if (player1.isTurn == true)
+            {
+                // If player 1's ball type is full
+                if (player1.pBallType == "Full")
+                {
+                    // Remove the ball from player 1's list
+                    player1.removeBall(ball);
+                }
+                else
+                {
+                    // Remove the ball from player 2's list
+                    player2.removeBall(ball);
+                }
+            }
+            // Else if its player 2's turn
+            else if (player2.isTurn == true)
+            {
+                // If player 2's ball type is full
+                if (player2.pBallType == "Full")
+                {
+                    // Remove the bal from player 2's list.   
+                    player2.removeBall(ball);
+                }
+                else
+                {
+                    // Remove the ball from player 1's list
+                    player1.removeBall(ball);
+                }
+            }
+        }
     }
 
     public bool getPlayer1IsTurn()
@@ -213,19 +279,32 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public bool switchturns()
+    public void skipTurn()
     {
+        if (player1.isTurn == true)
+        {
+            player1.assignTurn(true);
+            player2.assignTurn(false);
+        }
+        else
+        {
+            player1.assignTurn(false);
+            player2.assignTurn(true);
+        }
+    }
+
+    public void switchturns()
+    {
+
         if (player1.isTurn == true)
         {
             player1.assignTurn(false);
             player2.assignTurn(true);
-            return true;
         }
         else
         {
             player1.assignTurn(true);
             player2.assignTurn(false);
-            return false;
         }
     }
 
@@ -278,7 +357,10 @@ public class Player
     public void assignTurn(bool turn)
     {
         isTurn = turn;
-        Debug.Log(name + "'S TURN IS NIOW " + isTurn);
+        if (isTurn == true)
+        {
+            Debug.Log(name);
+        }
     }
 
     public void removeBall(GameObject ball)

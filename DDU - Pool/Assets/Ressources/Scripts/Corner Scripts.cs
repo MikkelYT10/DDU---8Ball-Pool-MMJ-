@@ -14,7 +14,6 @@ public class CornerScripts : MonoBehaviour
         if (GameManager == null)
         {
             Debug.LogError("GameManager not found in the scene!");
-            // Handle this situation appropriately
         }
     }
 
@@ -23,64 +22,38 @@ public class CornerScripts : MonoBehaviour
     {
         Debug.Log("Corner " + cornerNumber + " entered by " + other.gameObject);
 
-        if (other.gameObject.tag == "Striped")
+        if (GameManager.assignedBalls == false)
         {
-            if (GameManager.assignedBalls == false)
+            if (GameManager.getPlayer1IsTurn() == true)
             {
-                if (GameManager.getPlayer1IsTurn() == true)
-                {
-                    GameManager.assigningBalls(1, "Striped");
-                    GameManager.assigningBalls(2, "Full");
-                }
-                else
-                {
-                    GameManager.assigningBalls(2, "Striped");
-                    GameManager.assigningBalls(1, "Full");
-
-                }
-                GameManager.assignedBalls = true;
+                GameManager.assigningBalls(1, "Striped");
+                GameManager.assigningBalls(2, "Full");
+            }
+            else
+            {
+                GameManager.assigningBalls(2, "Striped");
+                GameManager.assigningBalls(1, "Full");
 
             }
+            GameManager.assignedBalls = true;
 
-            GameManager.removeBallFromPlayerList(true, other.gameObject);
-            Destroy(other.gameObject);
-        }
-        else if (other.gameObject.tag == "Full")
-        {
-            if (GameManager.assignedBalls == false)
+            if (other.gameObject.tag == "8Ball")
             {
-                if (GameManager.getPlayer1IsTurn() == true)
-                {
-                    GameManager.assigningBalls(1, "Full");
-                    GameManager.assigningBalls(2, "Striped");
-
-                }
-                else
-                {
-                    GameManager.assigningBalls(2, "Full");
-                    GameManager.assigningBalls(1, "Striped");
-
-                }
-                GameManager.assignedBalls = true;
+                GameManager.EightBallPocketed();
+                Destroy(other.gameObject);
             }
-
-            GameManager.removeBallFromPlayerList(false, other.gameObject);
-            Destroy(other.gameObject);
+            else if (other.gameObject.tag == "Player")
+            {
+                other.transform.position = middle.position;
+                GameManager.stopMoving(other.gameObject.GetComponent<Rigidbody>());
+            }
         }
-        else if (other.gameObject.tag == "8Ball")
-        {
-            GameManager.EightBallPocketed();
-            Destroy(other.gameObject);
-        }
-        else if (other.gameObject.tag == "Player")
-        {
-            other.transform.position = middle.position;
-            GameManager.stopMoving(other.gameObject.GetComponent<Rigidbody>());
-        }
-        else
-        {
-            Debug.LogError("Unknown ball type entered the corner!");
-            // Handle this situation appropriately
-        }
+        GameManager.removeBallFromPlayerList(other.gameObject);
+        Destroy(other.gameObject);
+        Debug.Log("Removed ball from player list");
     }
 }
+
+
+
+ 
