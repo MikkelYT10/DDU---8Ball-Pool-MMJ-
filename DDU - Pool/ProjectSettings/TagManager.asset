@@ -13,6 +13,8 @@ TagManager:
   - Full
   - Striped
   - 8Ball
+  - Player 1 Active
+  - Player 2 Active
   layers:
   - Default
   - TransparentFX
